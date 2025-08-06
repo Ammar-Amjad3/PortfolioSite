@@ -3,22 +3,9 @@ import { Download, Mail } from "lucide-react";
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 
 export default function HeroSection() {
-  const handleDownloadResume = async () => {
-    try {
-      const response = await fetch("/api/download-resume");
-      const data = await response.json();
-      
-      if (data.success) {
-        // Handle successful download
-        window.open(data.url, '_blank');
-      } else {
-        // Show message to user
-        alert(data.message);
-      }
-    } catch (error) {
-      console.error("Download error:", error);
-      alert("Resume download will be available soon!");
-    }
+  const handleDownloadResume = () => {
+    // Direct download via redirect
+    window.open("/api/download-resume", "_blank");
   };
 
   const handleGetInTouch = () => {

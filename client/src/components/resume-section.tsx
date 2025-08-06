@@ -3,20 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Download, FileText, Code, BookOpen, Briefcase } from "lucide-react";
 
 export default function ResumeSection() {
-  const handleDownloadResume = async () => {
-    try {
-      const response = await fetch("/api/download-resume");
-      const data = await response.json();
-      
-      if (data.success) {
-        window.open(data.url, '_blank');
-      } else {
-        alert(data.message);
-      }
-    } catch (error) {
-      console.error("Download error:", error);
-      alert("Resume download will be available soon!");
-    }
+  const handleDownloadResume = () => {
+    // Direct download via redirect
+    window.open("/api/download-resume", "_blank");
   };
 
   return (
