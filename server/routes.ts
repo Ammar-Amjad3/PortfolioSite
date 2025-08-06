@@ -66,12 +66,31 @@ export async function registerRoutes(app: Express): Promise<Server> {
   });
 
   // Download resume endpoint
-  app.get("/api/download-resume", (req, res) => {
-    // For now, return a message since we don't have the actual PDF file
-    res.json({ 
-      success: false, 
-      message: "Resume file not available yet. Please contact directly for resume." 
-    });
+  app.get("/api/download-resume", async (req, res) => {
+    try {
+      // Google Drive direct download URL (requires public access)
+      const driveUrl = 'https://drive.google.com/uc?export=download&id=188e8yWVAswVBUFrbBQnYinhwhw1KHkvm';
+      
+      // Check if the file is publicly accessible
+      const response = await fetch(driveUrl, { method: 'HEAD' });
+      
+      if (response.ok) {
+        // File is accessible, redirect to download
+        res.redirect(driveUrl);
+      } else {
+        // File needs to be made public
+        res.json({ 
+          success: false, 
+          message: "Please make your Google Drive resume publicly accessible: Go to your file → Share → Change to 'Anyone with the link' → Copy link. Then the download will work automatically." 
+        });
+      }
+    } catch (error) {
+      console.error('Resume download error:', error);
+      res.status(500).json({ 
+        success: false, 
+        message: "Resume download temporarily unavailable. Please contact ammaramjad0324@gmail.com for the resume file." 
+      });
+    }
   });
 
   // Get contact messages (optional admin endpoint)
