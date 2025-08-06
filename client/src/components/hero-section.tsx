@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Download, Mail } from "lucide-react";
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
+import profileImage from "../../../images/WhatsApp Image 2025-08-04 at 9.24.02 PM.jpeg";
 
 export default function HeroSection() {
   const handleDownloadResume = () => {
@@ -102,7 +103,7 @@ export default function HeroSection() {
           <div className="flex justify-center lg:justify-end animate-in fade-in slide-in-from-right duration-1000 delay-300">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800"
+                src={profileImage}
                 alt="M Ammar Amjad - Professional headshot"
                 className="w-80 h-80 rounded-full object-cover shadow-2xl border-8 border-background"
               />
