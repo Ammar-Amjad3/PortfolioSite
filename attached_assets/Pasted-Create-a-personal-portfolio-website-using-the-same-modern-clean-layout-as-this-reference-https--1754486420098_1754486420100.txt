@@ -1,0 +1,194 @@
+Create a personal portfolio website using the same modern, clean layout as this reference:
+https://amanullah-portfolio.vercel.app/
+
+Maintain:
+- Light theme with optional dark mode toggle
+- Sticky header with section scroll
+- Smooth animations on scroll, hover, and click
+- Download resume button
+- Contact form + floating chat icon (both working with Nodemailer)
+
+---
+
+🧑‍💼 Personal Info:
+
+- Name: M Ammar Amjad   
+- Tagline: Front-End Developer (highlight)  
+- Sub-title: UI/UX Designer | Learning MERN Stack  
+- Email: ammaramjad0324@gmail.com   
+- Phone: 0324-5947204   
+- Address: Faisalabad, Punjab, Pakistan   
+- Resume Button: Add working **"Download Resume"** button  
+- Profile image: Use professional placeholder
+
+---
+
+🔗 **Navbar with Smooth Scroll**
+
+Sections:
+- Home
+- About
+- Skills
+- Education
+- Experience
+- Projects
+- Resume
+- Contact
+
+Each link should scroll to its respective section smoothly.
+
+---
+
+🧠 **About Section**
+
+I’m a passionate Front-End Developer and UI/UX Designer, currently exploring the MERN Stack. I love crafting responsive interfaces that are visually appealing and optimized for performance.
+
+---
+
+⚙️ **Skills Section**
+
+Languages/Frameworks:
+- React – 80%
+- JavaScript – 80%
+- TypeScript – 80%
+- Bootstrap – 85%
+- Tailwind CSS – 80%
+- Firebase – 85%
+
+Tools (with logos):
+- VS Code
+- Git
+- GitHub
+- Netlify
+- Vercel
+- Cursor
+
+Show progress visually with animated progress bars or circular meters.
+
+---
+
+🎓 **Education**
+
+**Bachelor of Science (BS), Computer Science**  
+2021–2025 | Government College University, Faisalabad  
+**CGPA: 3.0**  
+Relevant Courses: Web App Dev, DSA, SE, DBMS, OOP, OS, Mobile App Dev
+
+**FSc Pre-Engineering – A+ Grade**  
+2019–2021 | The Logic School System (Khurrianwala Campus) 
+Subjects: Math, Physics, Computer, English, Islamic Studies 
+
+---
+
+💼 **Experience Section**
+
+1️⃣ **Academic Projects & Final Year Project (FYP)**  
+(2021–2025) – Government College University, FSD  
+Completed several academic projects using real-world tools and principles. Gained hands-on experience in Git, React, Firebase, and web design.
+
+🏠 Smart Classified Property Website
+A real-world full-stack project to browse, list, and manage properties for sale and rent, with features tailored for both users and agents.
+
+Features:
+
+User/Agent Dashboard
+
+Upload Property Listings
+
+Dynamic Property Search
+
+Admin Panel for User & Listing Management
+
+Single Property Detail Page
+
+Ratings & Reviews
+
+Saved Properties
+
+Chat Interface for Users & Agents
+
+Referral Rewards System
+
+Tech Stack: PHP · MySQL · HTML · CSS · JavaScript · Bootstrap 
+
+2️⃣ **Saylani Mass IT Training (SMIT) Trainee**  
+Nov 2023 – Dec 2024 | Saylani Welfare International Trust  
+Full-stack MERN program graduate.  
+Achievements:
+- Built Firebase-authenticated apps  
+- Hands-on full-stack development  
+- Team-based project simulations
+
+**Tools:** React, Express.js, Firebase, MongoDB, Node.js
+
+---
+
+📁 **Projects Section** (each with title, short description, GitHub link, image)
+
+ 
+🖼 Add homepage screenshot
+
+---
+
+📄 **Resume Section**
+
+Title: 📄 Download My Resume  
+Add a clean **Download Resume** button that links to a downloadable PDF file
+
+---
+
+💬 **Floating Chat Icon**
+
+- Bottom-right floating button with message icon  
+- On click, show pop-up form:
+  - Name
+  - Email
+  - Message
+  - Send Button  
+- Use Nodemailer to send the form (same as contact section)  
+- Show success/error messages
+
+---
+
+📬 **Contact Section**
+
+Include:
+- Name
+- Email
+- Subject
+- Message
+- Send Message button (via Nodemailer)
+
+Also show:
+
+📧 **Email:** [ammaramjad0324@gmail.com](mailto:ammaramjad0324@gmail.com)  
+📞 **Phone:** [03245947204](tel:+923245947204)
+
+Both should be **clickable**:
+- Clicking email opens default mail app
+- Clicking phone triggers mobile call if on mobile
+
+---
+
+🔗 **Social Links Section (footer or top right)**  
+**Open all links in new tab** using `target="_blank"`
+  
+linkdind @https://www.linkedin.com/in/ammar-amjad-57435b324/ 
+git hub @https://github.com/Ammar-Amjad3 
+email : ammaramjad0324@gmail.com
+insta : @https://www.instagram.com/iam.ammarx/ 
+fb : @https://www.facebook.com/MianAmmar56.0/
+Twitter ' https://x.com/ammaramjad0324?t=DOjl-BkmaxwmWQwsPI4l_w&s=09
+---
+
+🌙 **Dark / Light Mode**
+
+- Toggle button (sun/moon) in navbar  
+- Save theme in localStorage  
+- Animate transition between themes
+
+---
+
+✨ **Animations & Effects**
+
+- Smooth scroll animation for navbar links...
