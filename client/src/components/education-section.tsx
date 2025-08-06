@@ -6,7 +6,7 @@ const educationData = [
     degree: "Bachelor of Science (BS), Computer Science",
     period: "2021 - 2025",
     institution: "Government College University, Faisalabad",
-    cgpa: "3.0",
+    cgpa: "3.2",
     courses: "Web App Dev, DSA, SE, DBMS, OOP, OS, Mobile App Dev",
     icon: GraduationCap,
     color: "blue",
